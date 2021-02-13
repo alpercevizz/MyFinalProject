@@ -36,7 +36,7 @@ namespace Business.Concrete
 
             //InMemoryProductDal ınMemoryProductDal = new InMemoryProductDal(); -> Executed with storage. A one class don't new another classes.
 
-            if(DateTime.Now.Hour ==22)
+            if (DateTime.Now.Hour == 01)
             {
                 return new ErrorDataResult<List<Product>>(Messages.MaintenanceTime);
             }
